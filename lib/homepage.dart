@@ -46,7 +46,6 @@ class _CalculatorState extends State<Calculator> {
               icon: const Icon(
                 Icons.more_vert_outlined,
                 size: 30,
-                // color: Colors.white,
               ),
             ),
           ],
@@ -80,171 +79,169 @@ class _CalculatorState extends State<Calculator> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Expanded(
-                    child: Container(
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        children: [
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                              Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceEvenly,
-                                children: [
-                                  button(
-                                    buttonBgColor: Colors.grey,
-                                    textColor: Colors.yellow,
-                                    text: 'θ',
-                                    shape: const StadiumBorder(),
-                                    size: const Size(40, 40),
-                                  ),
-                                  button(
-                                    buttonBgColor: Colors.grey,
-                                    textColor: Colors.yellow,
-                                    text: 'μ',
-                                    shape: const StadiumBorder(),
-                                    size: const Size(40, 40),
-                                  ),
-                                  button(
-                                    buttonBgColor: Colors.grey,
-                                    textColor: Colors.yellow,
-                                    text: 'sin',
-                                    shape: const StadiumBorder(),
-                                    size: const Size(40, 40),
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                              button(
-                                  text: 'Ac',
-                                  buttonBgColor: Colors.blueGrey,
-                                  textColor: Colors.white,
-                                  shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(8)),
-                                  size: const Size(60, 60)),
-                              button(
-                                  text: '⌫',
-                                  buttonBgColor: Colors.blueGrey,
-                                  textColor: Colors.white,
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(8),
-                                  ),
-                                  size: const Size(60, 60)),
-                              button(
-                                  buttonBgColor: Colors.amber,
-                                  text: '/',
-                                  shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(8)),
-                                  size: const Size(60, 60)),
-                            ],
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                              button(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            Row(
+                              mainAxisAlignment:
+                                  MainAxisAlignment.spaceEvenly,
+                              children: [
+                                button(
                                   buttonBgColor: Colors.grey,
                                   textColor: Colors.yellow,
-                                  text: '7',
-                                  shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(8)),
-                                  size: const Size(60, 60)),
-                              button(
+                                  text: 'θ',
+                                  shape: const StadiumBorder(),
+                                  size: const Size(40, 40),
+                                ),
+                                button(
                                   buttonBgColor: Colors.grey,
                                   textColor: Colors.yellow,
-                                  text: '8',
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(8),
-                                  ),
-                                  size: const Size(60, 60)),
-                              button(
+                                  text: 'μ',
+                                  shape: const StadiumBorder(),
+                                  size: const Size(40, 40),
+                                ),
+                                button(
                                   buttonBgColor: Colors.grey,
                                   textColor: Colors.yellow,
-                                  text: '9',
-                                  shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(8)),
-                                  size: const Size(60, 60)),
-                            ],
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                              button(
-                                  buttonBgColor: Colors.grey,
-                                  textColor: Colors.yellow,
-                                  text: '4',
-                                  shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(8)),
-                                  size: const Size(60, 60)),
-                              button(
-                                  buttonBgColor: Colors.grey,
-                                  textColor: Colors.yellow,
-                                  text: '5',
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(8),
-                                  ),
-                                  size: const Size(60, 60)),
-                              button(
-                                  buttonBgColor: Colors.grey,
-                                  textColor: Colors.yellow,
-                                  text: '6',
-                                  shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(8)),
-                                  size: const Size(60, 60)),
-                            ],
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            //crossAxisAlignment: CrossAxisAlignment.end,
-                            children: [
-                              button(
-                                  buttonBgColor: Colors.grey,
-                                  textColor: Colors.yellow,
-                                  text: '1',
-                                  shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(8)),
-                                  size: const Size(60, 60)),
-                              button(
-                                  buttonBgColor: Colors.grey,
-                                  textColor: Colors.yellow,
-                                  text: '2',
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(8),
-                                  ),
-                                  size: const Size(60, 60)),
-                              button(
-                                  buttonBgColor: Colors.grey,
-                                  textColor: Colors.yellow,
-                                  text: '3',
-                                  shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(8)),
-                                  size: const Size(60, 60)),
-                            ],
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceAround,
-                            //crossAxisAlignment: CrossAxisAlignment.end,
-                            children: [
-                              button(
-                                  buttonBgColor: Colors.grey,
-                                  textColor: Colors.yellow,
-                                  text: '0',
-                                  shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(8)),
-                                  size: const Size(150, 60)),
-                              button(
+                                  text: 'sin',
+                                  shape: const StadiumBorder(),
+                                  size: const Size(40, 40),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            button(
+                                text: 'Ac',
+                                buttonBgColor: Colors.blueGrey,
+                                textColor: Colors.white,
+                                shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(8)),
+                                size: const Size(60, 60)),
+                            button(
+                                text: '⌫',
+                                buttonBgColor: Colors.blueGrey,
+                                textColor: Colors.white,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                                size: const Size(60, 60)),
+                            button(
+                                buttonBgColor: Colors.amber,
+                                text: '/',
+                                shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(8)),
+                                size: const Size(60, 60)),
+                          ],
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            button(
                                 buttonBgColor: Colors.grey,
                                 textColor: Colors.yellow,
-                                text: '.',
-                                size: const Size(60, 60),
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
+                                text: '7',
+                                shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(8)),
+                                size: const Size(60, 60)),
+                            button(
+                                buttonBgColor: Colors.grey,
+                                textColor: Colors.yellow,
+                                text: '8',
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                                size: const Size(60, 60)),
+                            button(
+                                buttonBgColor: Colors.grey,
+                                textColor: Colors.yellow,
+                                text: '9',
+                                shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(8)),
+                                size: const Size(60, 60)),
+                          ],
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            button(
+                                buttonBgColor: Colors.grey,
+                                textColor: Colors.yellow,
+                                text: '4',
+                                shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(8)),
+                                size: const Size(60, 60)),
+                            button(
+                                buttonBgColor: Colors.grey,
+                                textColor: Colors.yellow,
+                                text: '5',
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                                size: const Size(60, 60)),
+                            button(
+                                buttonBgColor: Colors.grey,
+                                textColor: Colors.yellow,
+                                text: '6',
+                                shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(8)),
+                                size: const Size(60, 60)),
+                          ],
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          //crossAxisAlignment: CrossAxisAlignment.end,
+                          children: [
+                            button(
+                                buttonBgColor: Colors.grey,
+                                textColor: Colors.yellow,
+                                text: '1',
+                                shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(8)),
+                                size: const Size(60, 60)),
+                            button(
+                                buttonBgColor: Colors.grey,
+                                textColor: Colors.yellow,
+                                text: '2',
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                                size: const Size(60, 60)),
+                            button(
+                                buttonBgColor: Colors.grey,
+                                textColor: Colors.yellow,
+                                text: '3',
+                                shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(8)),
+                                size: const Size(60, 60)),
+                          ],
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          //crossAxisAlignment: CrossAxisAlignment.end,
+                          children: [
+                            button(
+                                buttonBgColor: Colors.grey,
+                                textColor: Colors.yellow,
+                                text: '0',
+                                shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(8)),
+                                size: const Size(150, 60)),
+                            button(
+                              buttonBgColor: Colors.grey,
+                              textColor: Colors.yellow,
+                              text: '.',
+                              size: const Size(60, 60),
+                            ),
+                          ],
+                        ),
+                      ],
                     ),
                   ),
                   Container(
